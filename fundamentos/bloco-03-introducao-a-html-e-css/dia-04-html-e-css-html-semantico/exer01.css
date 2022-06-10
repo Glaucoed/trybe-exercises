@@ -8,7 +8,9 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
-    border: solid 2px; 
+    border: solid 2px;
+    margin: 0 auto;
+    list-style: none; 
   }
 
   .second {
@@ -17,7 +19,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-    border: solid 2px;    
+    border: solid 2px;  
+    display: inline-block;  
   }
 
   .third {
@@ -27,11 +30,11 @@ h1 {
     text-align: center;
     width: 300px;
     border: solid 2px;
+    display: inline-block;
   }
 
 .ul li{
-    display: inline;
-    
+    display: inline;  
 }
 ul{
     text-align: center;
