@@ -30,17 +30,29 @@ const b = 20;
 const c = 5;
 
 if (a > b && a > c){
-    console.log("O numero maior é: " + a + " A");
+    console.log("O numero maior é A");
 }
 else if(b > a && b > c){
-    console.log("O numero maior é: " + b + " B");
+    console.log("O numero maior é B");
 }
     else{
-    console.log("O numero maior é: " + c + " C");
+    console.log("O numero maior é C");
+};
+
+// Exercicio 04
+
+const value = 0;
+
+if(value > 0){
+console.log("positive");
+}
+else if(value < 0){
+console.log("negative");
+}else{
+    console.log("zero");
 };
 
 
-// Exercicio 04
 
 
 
