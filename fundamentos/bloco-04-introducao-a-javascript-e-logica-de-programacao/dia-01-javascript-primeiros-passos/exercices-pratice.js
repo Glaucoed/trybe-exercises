@@ -76,28 +76,64 @@
 
 // Exercicio 06
 
-let pecas = "Peao"
+// let pecas = "Peao"
 
-switch (pecas.toLowerCase()) {
-    case "peao":
-        console.log("Peão -> Frente o primeiro movimento podem ser duas casas.");
-        break;
-    case "cavalo":
-        console.log("Cavalo -> 'L' pode pular sobre as peças");
-        break;
-    case "torre":
-        console.log("Torre -> Vertical ou horizontal");
-        break;
-    case "bispo":
-        console.log("Bispo-> Diagonal");
-        break;
-    case "rainha":
-        console.log("Rainha-> Horizontal, vertical e diagonais");
-        break;
-    case "rei":
-        console.log(" Rei-> Horizontal, vertical e diagonal");
-        break;
-    default:
-        console.log("Peça invalida, tente outra.");  
+// switch (pecas.toLowerCase()) {
+//     case "peao":
+//         console.log("Peão -> Frente o primeiro movimento podem ser duas casas.");
+//         break;
+//     case "cavalo":
+//         console.log("Cavalo -> 'L' pode pular sobre as peças");
+//         break;
+//     case "torre":
+//         console.log("Torre -> Vertical ou horizontal");
+//         break;
+//     case "bispo":
+//         console.log("Bispo-> Diagonal");
+//         break;
+//     case "rainha":
+//         console.log("Rainha-> Horizontal, vertical e diagonais");
+//         break;
+//     case "rei":
+//         console.log(" Rei-> Horizontal, vertical e diagonal");
+//         break;
+//     default:
+//         console.log("Peça invalida, tente outra.");  
 
+// };
+
+// Exercicio 07
+
+// let porcentagem = 1;
+
+// if(porcentagem <0 || porcentagem > 100){
+//     console.log("Erro, nota incorreta!");
+// }
+// else if (porcentagem >= 90) {
+//     console.log("A");   
+// } else if(porcentagem >= 80) {
+//     console.log("B");
+// } else if(porcentagem >= 70) {
+//     console.log("C");
+// } else if(porcentagem >= 60) {
+//     console.log("D");
+// } else if(porcentagem >= 50) {
+//     console.log("E");
+// } else {
+//     console.log("F"); 
+// };
+
+// Exercicio 08
+//  quando usamos o || quer dizer (ou) - precisa que somente 1 seja (true) no caso par
+
+
+const a = "3";
+const b = "3";
+const c = "4";
+
+result = false;
+
+if(a % 2 == 0 || b % 2 == 0 || c % 2 == 0 ) {
+    result = true;
 };
+console.log(result)
