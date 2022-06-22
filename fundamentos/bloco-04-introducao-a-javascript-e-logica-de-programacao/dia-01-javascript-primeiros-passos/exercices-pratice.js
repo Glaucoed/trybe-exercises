@@ -141,13 +141,13 @@
 // Exercicio 09
 //  quando usamos o || quer dizer (ou) - precisa que somente 1 seja (true) no caso par
 
-const a = "4";
-const b = "4";
-const c = "4";
+// const a = "4";
+// const b = "4";
+// const c = "4";
 
-result = false;
+// result = false;
 
-if(a % 2 != 0 || b % 2 != 0 || c % 2 != 0) {
-    result = true;
-};
-console.log(result)
+// if(a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) {
+//     result = true;
+// };
+// console.log(result)
