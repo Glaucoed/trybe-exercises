@@ -1,0 +1,25 @@
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration-line: overline underline;
+    text-decoration-color: red;
+}
+p{
+        font-weight: 600;
+        font-size: 3em;
+        font-style: italic;
+        line-height: 20px;
+}
+body{
+    font-size: 16px;
+}
+#a{
+ background-color: yellow;
+}
+#v{
+ background-color: red;
+}
+#m{
+    
+    background-color: brown;
+}
