@@ -12,9 +12,7 @@ let first = document.getElementById('first');
 let blueCircle = document.createElement('div');
 
 // Como podemos modificar esse elemento, adicionando classes CSS para ele, por exemplo!?
-
 // circulo azul pequeno
-
 // blueCircle.setAttribute('class', 'circle blue small');
 blueCircle.className = 'circle blue small';
 
