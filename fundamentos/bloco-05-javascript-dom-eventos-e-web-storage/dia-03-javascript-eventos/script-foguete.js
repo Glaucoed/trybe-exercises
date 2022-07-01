@@ -50,3 +50,14 @@ function createDays() {
   }
 }
 createDays();
+
+function createHolidayButton(recebeParametro) {
+  let localClasse = document.querySelector('.buttons-container');
+  let novoButton = document.createElement('button');  
+  novoButton.innerHTML = recebeParametro;
+  //novoButton.id = 'btn-holiday'; ou com setAttribute, exemplo abaixo
+  novoButton.setAttribute('id', 'btn-holiday'); // primeiro valor e o segundo paramentro
+  localClasse.appendChild(novoButton);
+}
+
+createHolidayButton('Feriados');
