@@ -34,3 +34,7 @@ function calculaNumeros (arrayNum){
   // Retorno esperado: true  
   //verificaFimPalavra(‘joaofernando’, ‘fernan’);  
   //  Retorno esperado: false;  
+
+
+
+
