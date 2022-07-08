@@ -1,0 +1,5 @@
+@import './node_modules/pikaday/css/pikaday.css';
+body{
+/* background-color: rgb(204, 202, 199); */
+background-image: linear-gradient(to right, rgba(245, 225, 144, 0.87), rgba(255, 0, 0, 0.432), rgba(245, 225, 144, 0.8));
+}

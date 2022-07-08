@@ -35,6 +35,12 @@
     vertical-align: middle;
     width: 13.6%;
   }
+
+  #days .diaZoom{
+  font-size: 25px;
+  background-color: rgb(199,223,223);
+  border-radius: 45% 75%;
+  }
   
   .input-container {
     width: 49%;
