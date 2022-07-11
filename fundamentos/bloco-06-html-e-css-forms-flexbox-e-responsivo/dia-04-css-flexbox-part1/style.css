@@ -39,28 +39,21 @@ letter-spacing: 1px;;
   width: 33%;
   margin: 0 auto;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
 }
 .section-img-container div{
 display: flex;
 flex-direction: column;
-align-items: flex-end;
 padding: 15px;
 margin: 10px;
 background-color: #F1F1F1;
 border-radius: 10px;
 box-shadow: 2px 2px rgb(199, 195, 195);
 }
-.section-img-container img{
-align-items:flex-end;
-border: 2px solid;
-}
-
 .tagHR{
 width: 200px;
 margin: 20px auto;
 }
-
 
 .footer-container{
 display: flex;
