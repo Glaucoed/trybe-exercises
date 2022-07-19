@@ -1,4 +1,4 @@
-const order = {
+Chega de teoria. Vamos botar a mãoconst order = {
   name: 'Rafael Andrade',
   phoneNumber: '11-98763-1416',
   address: {
