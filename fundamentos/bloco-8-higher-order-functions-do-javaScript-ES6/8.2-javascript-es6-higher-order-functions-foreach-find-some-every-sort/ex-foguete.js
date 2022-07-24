@@ -61,6 +61,7 @@ const books = [
   },
 ];
 
+// Exercicio 01
 function authorBornIn1947() {
   return books.find((book) => book.author.birthYear === 1947).author.name;
 }
@@ -69,13 +70,37 @@ function authorBornIn1947() {
 // return books.find  -> [preciso usar o return para mostrar o meu resultado]
 // ((book) => book.author.birthYear === 1947) -> [Ele vai executar a minha condição e me retornar]
 // .author.name  -> [É o que eu quero mostrar no caso o "autor"]
-// Linha 67 - authorBornIn1947() - preciso chamar a função
+// Linha 68 - authorBornIn1947() - preciso chamar a função
 
+// Exercicio 02
 function smallerName() {
   let nameBook;
-  books.forEach((small) => {
-    if (!nameBook || small.name.length < nameBook.length) nameBook = small.name;
+  books.forEach((book) => {
+    if (!nameBook || book.name.length < nameBook.length) nameBook = book.name;
   });
   return nameBook;
 }
-console.log(smallerName());
+// console.log(smallerName());
+
+// Importante para entender o mecanismo do Elemento o porque é necessario dele
+// return books.forEach((elemento) => console.log(elemento.name)); // no caso o elemento é pra eu conseguir acessar o objeto
+
+// Exercicio 03
+function getNamedBook() {
+  return books.find((book) => book.name.length === 26).name;
+}
+// console.log(getNamedBook());
+
+// Exercicio 04
+function booksOrderedByReleaseYearDesc() {
+  return books.sort(
+    (livroA, livroB) => livroB.releaseYear - livroA.releaseYear
+  );
+}
+// console.log(booksOrderedByReleaseYearDesc())
+
+// const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+
+}
