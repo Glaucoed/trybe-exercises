@@ -39,3 +39,11 @@ const isOdd = (number) => {
   repeat(3, isEven); // Testa quais números serão pares;
   repeat(3, isOdd); // Testa quais números serão ímpares;
   
+  //
+
+
+  const numberGenerator = () => {
+    return Math.random() * 100;
+  }
+  
+  console.log(numberGenerator)
