@@ -1,0 +1,4 @@
+
+some() -> se pelo menos 1 elemento do array passar na validação ele vai retornar TRUE, se nenhum passar na validação retorna FALSE
+
+every() -> se todos os elementos do array passar na condição ele retorna true, se algum elemento nao passar na condição ele retorna FALSE
