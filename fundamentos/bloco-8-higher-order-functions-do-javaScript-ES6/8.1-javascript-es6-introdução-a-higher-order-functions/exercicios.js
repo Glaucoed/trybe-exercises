@@ -16,6 +16,10 @@ const newEmployees = (employeeGenerator) => {
 };
 // console.log(newEmployees(employeeGenerator));
 
+
+
+
+
 // Exercicio 02
 
 const geraNumeroAleatorio = () => Math.floor(Math.random() * 5 + 1);
@@ -29,13 +33,30 @@ const verificaResult = (numEscolhido, geraNumeroAleatorio) => {
 
 // console.log(verificaResult(1, geraNumeroAleatorio));
 
-const points = [40, 100, 1, 5, 25, 10];
 
-let x = points.sort(function(a, b){
-  // console.log(a, 'posicao A')
-  // console.log(b, 'posicao B')
-  return a - b
-});
 
-console.log(points);
-console.log(x);
+
+
+
+// Exercicio 03
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+const verifica = (gabarito, resposta) => {
+  if (gabarito === resposta) return 1;
+  if (resposta === 'N.A') return 0;
+  return -0.5;
+}
+const verifica2 = (gabarito, resposta) => {
+  if (gabarito === resposta) return 1;
+  return 0;
+}
+const retornaPontuacao = (arr1, arr2, callbackVerifica) => {
+  let pontuacao = 0;
+  for (let i = 0; i < arr1.length; i += 1) {
+    pontuacao += callbackVerifica(arr1[i], arr2[i]);
+  }
+  return `A sua pontuacao foi: ${pontuacao}`;
+}
+console.log(retornaPontuacao(RIGHT_ANSWERS, STUDENT_ANSWERS, verifica));
+console.log(retornaPontuacao(RIGHT_ANSWERS, STUDENT_ANSWERS, verifica2));
