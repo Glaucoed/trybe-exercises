@@ -62,7 +62,6 @@ const books = [
 ];
 
 // Exercicio 01
-
 function formatedBookNames(array) {
   return array.map(
     (livro) =>
@@ -72,7 +71,6 @@ function formatedBookNames(array) {
 //   console.log(formatedBookNames(books));
 
 // Exercicio 02
-
 function nameAndAge() {
   const newObj = books.map((book) => ({
     age: book.releaseYear - book.author.birthYear,
@@ -83,9 +81,18 @@ function nameAndAge() {
 // console.log(nameAndAge());
 
 
+
+// Exercicio 03
 function fantasyOrScienceFiction() {
     return books.filter((book)=> { //------------------------------------------------- Atenção no bigode e nos 2 return
         return (book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
     })
   }
-console.log(fantasyOrScienceFiction());
+// console.log(fantasyOrScienceFiction());
+
+
+// Exercicio 04
+function oldBooksOrdered() {
+    return books.filter((book)=> (book.releaseYear < 1962)).sort((a,b) => a.releaseYear - b.releaseYear );
+  }
+console.log(oldBooksOrdered())
