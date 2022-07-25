@@ -2,3 +2,11 @@
 some() -> se pelo menos 1 elemento do array passar na validação ele vai retornar TRUE, se nenhum passar na validação retorna FALSE
 
 every() -> se todos os elementos do array passar na condição ele retorna true, se algum elemento nao passar na condição ele retorna FALSE
+
+find() -> retorna o primeiro elemento do array que atender a condição da funcao.
+
+- dicas no "ex-foguete" - ler os comentarios
+- Linha 87 é muito importante para entender o mecanismo do elemento
+
+--- Muito importante ---
+-Lembrar sempre do return
