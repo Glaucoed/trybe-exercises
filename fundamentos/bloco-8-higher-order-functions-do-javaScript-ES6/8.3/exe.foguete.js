@@ -80,4 +80,12 @@ function nameAndAge() {
   }))
   return newObj.sort((ageA, ageB) => ageA.age - ageB.age)
 }
-console.log(nameAndAge());
+// console.log(nameAndAge());
+
+
+function fantasyOrScienceFiction() {
+    return books.filter((book)=> { //------------------------------------------------- Atenção no bigode e nos 2 return
+        return (book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
+    })
+  }
+console.log(fantasyOrScienceFiction());
