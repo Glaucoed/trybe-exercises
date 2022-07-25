@@ -75,24 +75,30 @@ function nameAndAge() {
   const newObj = books.map((book) => ({
     age: book.releaseYear - book.author.birthYear,
     author: book.author.name,
-  }))
-  return newObj.sort((ageA, ageB) => ageA.age - ageB.age)
+  }));
+  return newObj.sort((ageA, ageB) => ageA.age - ageB.age);
 }
 // console.log(nameAndAge());
 
-
-
 // Exercicio 03
 function fantasyOrScienceFiction() {
-    return books.filter((book)=> { //------------------------------------------------- Atenção no bigode e nos 2 return
-        return (book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
-    })
-  }
+  return books.filter((book) => {
+    //------------------------------------------------- Atenção no bigode e nos 2 return
+    return book.genre === "Ficção Científica" || book.genre === "Fantasia";
+  });
+}
 // console.log(fantasyOrScienceFiction());
-
 
 // Exercicio 04
 function oldBooksOrdered() {
-    return books.filter((book)=> (book.releaseYear < 1962)).sort((a,b) => a.releaseYear - b.releaseYear );
-  }
-console.log(oldBooksOrdered())
+  return books
+    .filter((book) => book.releaseYear < 1962)
+    .sort((a, b) => a.releaseYear - b.releaseYear);
+}
+// console.log(oldBooksOrdered())
+
+// Exercicio 05
+function fantasyOrScienceFictionAuthors() {
+  return books.filter((book) => book.genre === "Ficção Científica" || book.genre === "Fantasia").map((book)=> book.author.name).sort();
+}
+console.log(fantasyOrScienceFictionAuthors());
