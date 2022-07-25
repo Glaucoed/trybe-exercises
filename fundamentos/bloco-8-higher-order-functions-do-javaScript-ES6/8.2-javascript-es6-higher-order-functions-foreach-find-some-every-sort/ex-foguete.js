@@ -98,14 +98,14 @@ function booksOrderedByReleaseYearDesc() {
 // console.log(booksOrderedByReleaseYearDesc())
 
 
-// Exercicio 04 - const expectedResult = false;
+// Exercicio 05 - const expectedResult = false;
 function everyoneWasBornOnSecXX() {
   return books.every((book) => book.author.birthYear >= 1901 && book.author.birthYear <= 2000)
 }
 // console.log(everyoneWasBornOnSecXX());
 
-// Exercicio 05 - const expectedResult = true;
-
+// Exercicio 06 - const expectedResult = true;
 function someBookWasReleaseOnThe80s() {
-  // escreva seu código aqui
+    return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989)
 }
+console.log(someBookWasReleaseOnThe80s());
