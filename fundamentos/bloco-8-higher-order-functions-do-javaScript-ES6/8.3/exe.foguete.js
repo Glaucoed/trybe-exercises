@@ -101,4 +101,11 @@ function oldBooksOrdered() {
 function fantasyOrScienceFictionAuthors() {
   return books.filter((book) => book.genre === "Ficção Científica" || book.genre === "Fantasia").map((book)=> book.author.name).sort();
 }
-console.log(fantasyOrScienceFictionAuthors());
+// console.log(fantasyOrScienceFictionAuthors());
+
+
+// Exercicio 06
+function oldBooks() {
+  return books.filter((book)=> book.releaseYear < 1962).map((book)=> book.name)
+}
+console.log(oldBooks());
