@@ -50,6 +50,9 @@
 // https://assets.app.betrybe.com/fundamentals/arrays-and-hof/images/reduce-11ebfc91c0af0275f3cf12aed68768ca.gif
 
 
+
+
+
 // // exemplo 03
 
 // const numbers = [1, 32, 44, 2, 3];
@@ -59,3 +62,22 @@
 // const totalSum = numbers.reduce(sumNumbers, 30);
 
 // console.log(totalSum); //112
+
+
+
+
+// Exemplo 04
+
+// const numbers = [50, 85, -30, 3, 15];
+
+// const getBigger = (bigger, number) => ((bigger > number) ? bigger : number);
+
+// const bigger = numbers.reduce(getBigger, 10);
+// console.log(bigger); // 85
+
+
+
+
+// exemplo 05
+
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
