@@ -108,4 +108,29 @@ function fantasyOrScienceFictionAuthors() {
 function oldBooks() {
   return books.filter((book)=> book.releaseYear < 1962).map((book)=> book.name)
 }
-console.log(oldBooks());
+// console.log(oldBooks());
+
+
+//Exercicio 07
+
+// const expectedResult = 'O Senhor dos Anéis';
+
+// function authorWith3DotsOnName(nomeDoAutor) {
+//   const autor = books.find((book) =>  book.author.name.includes(nomeDoAutor));
+//   return autor.name;
+// }
+// console.log(authorWith3DotsOnName('J. R. R.'));
+
+function authorWith3DotsOnName() {
+  return books.filter((book) => (
+    book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.'))[0].name;
+  }
+  
+  // function authorWith3DotsOnName() {
+  //   return books.find((book) => (
+  //     book.author.name.split(' ')
+  //       .filter((word) => word.endsWith('.')).length === 3
+  //   )).name;
+  // }
+  
+  console.log(authorWith3DotsOnName());
