@@ -78,6 +78,25 @@
 
 
 
-// exemplo 05
+// exemplo 05 - 1 forma
 
 const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+
+const par = (num) => num % 2 === 0;
+const soma = (total, num) => total + num;
+
+const somaNumeros = (array) => array.filter(par).reduce(soma);
+console.log(somaNumeros(numbers));
+
+
+// exemplo 05 - 2 forma
+
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+
+const sumPair = (accumulator, number) => (
+  (number % 2 === 0) ? accumulator + number : accumulator
+);
+
+const sumNumbers = (array) => array.reduce(sumPair, 0);
+
+console.log(sumNumbers(numbers)); // 152
