@@ -1,4 +1,4 @@
-/*
+
 // const product = {
 //   name: "Smart TV Crystal UHD",
 //   price: "1899.05",
@@ -30,10 +30,10 @@ const character = {
   };
   
   // desestruturando o objeto:
-  const { name, age, homeWorld: { name: planetName }, description: { jedi } } = character;
+  const { name, age, homeWorld: { name: planetName, population}, description: { jedi } } = character;
 
-//   console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível 
-// que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
+  console.log(`Esse é o ${name}, ele tem ${age} anos, ${population} mora no planeta ${planetName} e, por incrível 
+que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi '}.`);
 
 
 // Exemplo 03
@@ -103,5 +103,3 @@ const {name, age, nationality, profession, squad, squadInitials,} = infoUser
 const text = `Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`
 
 console.log(text)
-
-*/
