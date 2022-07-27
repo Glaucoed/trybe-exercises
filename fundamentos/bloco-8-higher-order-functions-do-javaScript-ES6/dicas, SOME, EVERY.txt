@@ -1,0 +1,28 @@
+
+some() -> se pelo menos 1 elemento do array passar na validação ele vai retornar TRUE, se nenhum passar na validação retorna FALSE
+
+every() -> se todos os elementos do array passar na condição ele retorna true, se algum elemento nao passar na condição ele retorna FALSE
+
+find() -> retorna o primeiro elemento do array que atender a condição da funcao.
+
+- dicas no "ex-foguete" - ler os comentarios
+- Linha 87 é muito importante para entender o mecanismo do elemento
+
+--- Muito importante ---
+-Lembrar sempre do return
+
+[[[[[[[ MAP ]]]]]]]]
+O map aplica sobre os elementos de um array uma função e retorna um array novo, sem modificar o original;
+
+
+[[[[[[[ forEach ]]]]]]]]
+A forEach não tem tal restrição. Ela pode modificar o array original e retorna nada por padrão - 
+ela pode criar um array novo a partir de um antigo, pode simplesmente buscar por um elemento e retorná-lo, 
+pode não retornar nada, enfim! Ela é genérica e pode fazer diversas coisas.
+
+- Quando vai retornar objeto no map, é necesario utilizar o exem.map(() => ({ }));    // depois do {}
+
+[[[===
+✍️ Anote a dica: acc e curr são apenas nomes costumeiros, você pode dar o nome que quiser para o seu código, 
+sendo uma boa opção escolher nomes semânticos, de acordo com o que é executado pela função em questão.
+]]]===
