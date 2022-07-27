@@ -1,3 +1,4 @@
+/*
 // const product = {
 //   name: "Smart TV Crystal UHD",
 //   price: "1899.05",
@@ -102,3 +103,5 @@ const {name, age, nationality, profession, squad, squadInitials,} = infoUser
 const text = `Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`
 
 console.log(text)
+
+*/
