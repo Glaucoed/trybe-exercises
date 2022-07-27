@@ -42,11 +42,11 @@ const daysOfWeek = {
   };
   
   const { workDays, weekend } = daysOfWeek;
-  console.log(workDays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-  console.log(weekend); // ['Saturday', 'Sunday']
+//   console.log(workDays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+//   console.log(weekend); // ['Saturday', 'Sunday']
 
   const weekdays = [...workDays, ...weekend];
-console.log(weekdays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+// console.log(weekdays); // ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
 
@@ -65,17 +65,40 @@ const student = {
   console.log(classAssigned); // Turma B
   console.log(subject); // Matemática
 
-  
+
   
 // exemplo 05
-  const product = {
+const product = {
     name: 'Smart TV Crystal UHD',
     price: '1899.05',
     seller: 'Casas de Minas',
   };
   
-  const printProductDetails = ({ name, price, seller }) => {
-    console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
-  };
+//   const printProductDetails = ({ name, price, seller }) => {
+//     console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
+//   };
   
   printProductDetails(product); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
+
+
+
+//   Exercicio 01
+  const user = {
+    name: 'Maria',
+    age: 21,
+    nationality: 'Brazilian',
+  };
+  
+  const jobInfos = {
+    profession: 'Software engineer',
+    squad: 'Rocket Landing Logic',
+    squadInitials: 'RLL',
+  };
+const infoUser = {...user, ...jobInfos}
+// console.log(infoUser);
+
+const {name, age, nationality, profession, squad, squadInitials,} = infoUser
+
+const text = `Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`
+
+console.log(text)
