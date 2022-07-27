@@ -132,10 +132,10 @@ function containsA() {
   return names
     .map((name) => name)
     .toString()
-    .split('')
+    .split("")
     .reduce(
       (acc, name) =>
-        name.includes('A') || name.includes('a') ? (acc += 1) : acc,
+        name.includes("A") || name.includes("a") ? (acc += 1) : acc,
       0
     );
 }
@@ -143,11 +143,40 @@ function containsA() {
 //Gabarito
 
 function containsA() {
-  return names.reduce((acc, curr) =>
-     acc + curr.split('').reduce((acumulator, current) => {
-        if (current === 'a' || current === 'A') return acumulator + 1;
+  return names.reduce(
+    (acc, curr) =>
+      acc +
+      curr.split("").reduce((acumulator, current) => {
+        if (current === "a" || current === "A") return acumulator + 1;
         return acumulator;
-     }, 0), 0);
+      }, 0),
+    0
+  );
 }
 
-console.log(containsA());
+// console.log(containsA());
+
+// Exercicio 06
+
+const students = ["Pedro Henrique", "Miguel", "Maria Clara"];
+const grades = [
+  [9, 8, 10, 7, 5],
+  [10, 9, 9, 10, 8],
+  [10, 7, 10, 8, 9],
+];
+
+function studentAverage() {
+  const mediaEstudantes = students.map((estudante, index) => ({
+    name: estudante,
+    average:
+      grades[index].reduce((acc, curr) => acc + curr, 0) / grades[index].length,
+  }));
+  return mediaEstudantes;
+}
+console.log(studentAverage());
+
+// const expected = [
+//   { name: 'Pedro Henrique', average: 7.8 },
+//   { name: 'Miguel', average: 9.2 },
+//   { name: 'Maria Clara', average: 8.8 },
+// ];

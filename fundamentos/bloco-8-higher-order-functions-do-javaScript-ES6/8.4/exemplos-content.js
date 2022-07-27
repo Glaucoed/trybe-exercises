@@ -54,12 +54,12 @@
 
 // Exemplo 04
 
-// const numbers = [50, 85, -30, 3, 15];
+const numbers = [50, 85, -30, 3, 15];
 
-// const getBigger = (bigger, number) => ((bigger > number) ? bigger : number);
+const getBigger = (bigger, number) => ((bigger > number) ? bigger : number);
 
-// const bigger = numbers.reduce(getBigger, 10);
-// console.log(bigger); // 85
+const bigger = numbers.reduce(getBigger, 10);
+console.log(bigger); // 85
 
 
 
